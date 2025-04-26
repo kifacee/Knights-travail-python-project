@@ -2,7 +2,7 @@
 
 class Node:
     def __init__(self, value):
-        self._value = value
+        self._value = value     #the coordinate tuple will be stored in the value
         self._parent = None
         self._children = []
 
@@ -38,7 +38,7 @@ class Node:
             parentNode.add_child(self)  #add to parent's child list
 
 
-    def depth_search(self, value):
+    def depth_search(self, value):  #returns the node with the given value
         if self._value == value:       #check the value
             return self
         for child in self.children:         #for each child

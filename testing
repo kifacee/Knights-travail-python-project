@@ -1,0 +1,9 @@
+from graphviz import Digraph
+
+dot = Digraph()
+dot.node('A')
+dot.node('B')
+dot.edge('A', 'B')
+dot.render('test_graph', view=True)
+
+#practice using graphviz to visualize graphs
